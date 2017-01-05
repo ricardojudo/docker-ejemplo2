@@ -23,4 +23,4 @@ RUN gem update bundler
 RUN bundle install --path vendor/bundle --without development test doc --deployment --jobs=4
 RUN bundle exec rake assets:precompile
 
-CMD sh bin/web-serve
+#CMD sh bin/web-serve
